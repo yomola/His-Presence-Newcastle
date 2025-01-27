@@ -7,86 +7,90 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <!-- Header Section -->
-  <header class="bg-blue-900 text-white py-6">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
-        <!-- Church Logo -->
-        <div class="flex items-center">
-          <img src="./rccg-for-web.png" alt="Church Logo" class="h-12 w-12 mr-4">
-          <h1 class="text-3xl font-bold">RCCG His Presence Newcastle</h1>
+  <!-- Parent Container with Background Image -->
+  <div class="sm:bg-[url('./landing-Page-Alawode.webp')] bg-center bg-cover bg-no-repeat">
+    <!-- Header Section -->
+    <header class=" md:bg-transparent sm:bg-blue-900/80 text-stone-100 py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <!-- Church Logo -->
+          <div class="flex items-center">
+            <img src="./rccg-for-web.png" alt="Church Logo" class="h-12 w-12 mr-4">
+            <h1 class="text-3xl font-bold">RCCG His Presence Newcastle</h1>
+          </div>
+          <nav>
+            <ul class="flex space-x-4">
+              <li><a href="#who-we-are" class="hover:text-blue-300">Who We Are</a></li>
+              <li><a href="#services" class="hover:text-blue-300">Services</a></li>
+              <li><a href="#events" class="hover:text-blue-300">Events</a></li>
+              <li><a href="#giving" class="hover:text-blue-300">Giving</a></li>
+              <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="flex space-x-4">
-            <li><a href="#who-we-are" class="hover:text-blue-300">Who We Are</a></li>
-            <li><a href="#services" class="hover:text-blue-300">Services</a></li>
-            <li><a href="#events" class="hover:text-blue-300">Events</a></li>
-            <li><a href="#giving" class="hover:text-blue-300">Giving</a></li>
-            <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-800 text-white py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-5xl font-bold mb-4">Welcome to RCCG His Presence Newcastle</h2>
-      <p class="text-xl mb-8">A place of worship, fellowship, and God's presence. Join us as we grow in faith and love.</p>
-      <a href="#services" class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-300 transition duration-300">Join Us</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="text-stone-100 h-screen flex items-center">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-5xl font-bold mb-4">Welcome to our faith-filled haven, dedicated to nurturing souls for Christ</h2>
+        <p class="text-xl font-bold mb-8">A place of worship, fellowship, and God's presence. Join us as we grow in faith and love.</p>
+        <a href="#services" class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-300 transition duration-300">Join Us</a>
+      </div>
+    </section>
+  </div>
 
+  <!-- Rest of the file remains unchanged -->
   <!-- Who We Are Section -->
-  <section id="who-we-are" class="py-16">
-    <div class="container mx-auto px-4">
+  <section id="who-we-are" class="py-16 bg-blue-950">
+    <div class="container mx-auto px-4 text-stone-100">
       <h2 class="text-3xl font-bold text-center mb-8">Who We Are</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div>
           <img src="https://via.placeholder.com/500x300" alt="Church Building" class="rounded-lg shadow-lg">
         </div>
-        <div>
+        <div class="text-stone-100">
           <p class="text-lg mb-4">Redeem Christian Church of God (RCCG) His Presence Newcastle is a vibrant community of believers dedicated to spreading the gospel and experiencing God's presence. We are part of the global RCCG family, committed to holiness, evangelism, and discipleship.</p>
           <p class="text-lg mb-4">Faith inspires us, Love unites us</p>
           <p class="text-lg">We are confident that God uses ordinary people to achieve extraordinary things. We believe this necessitates honesty and vulnerability within our community. This fosters an atmosphere of authenticity where individuals can flourish and their Christian faith can deepen.</p>
         </div>
       </div>
-      <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+      <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4 text-stone-100">
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Church.</dt>
-          <dd class="text-4xl font-semibold tracking-tight text-blue-900">1</dd>
+          <dd class="text-4xl font-semibold tracking-tight">1</dd>
         </div>
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Church Members.</dt>
-          <dd class="text-4xl font-semibold tracking-tight text-blue-900">300+</dd>
+          <dd class="text-4xl font-semibold tracking-tight">300+</dd>
         </div>
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Warm and Welcoming.</dt>
-          <dd class="text-4xl font-semibold tracking-tight text-blue-900">100%</dd>
+          <dd class="text-4xl font-semibold tracking-tight">100%</dd>
         </div>
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Testimonies of God's Goodness!</dt>
-          <dd class="text-4xl font-semibold tracking-tight text-blue-900">Unlimited</dd>
+          <dd class="text-4xl font-semibold tracking-tight">Unlimited</dd>
         </div>
       </dl>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="bg-gray-200 py-16">
-    <div class="container mx-auto px-4">
+  <section id="services" class="bg-blue-950 py-16">
+    <div class="container mx-auto px-4 text-stone-200">
       <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
           <h3 class="text-2xl font-bold mb-4">Sunday Service</h3>
           <p class="text-lg">Join us every Sunday at 10:00 AM for a time of worship, prayer, and the Word of God.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
           <h3 class="text-2xl font-bold mb-4">Midweek Bible Study</h3>
           <p class="text-lg">Deepen your understanding of the Bible every Wednesday at 6:00 PM.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
           <h3 class="text-2xl font-bold mb-4">Prayer Meetings</h3>
           <p class="text-lg">Join us for powerful prayer sessions every Friday at 6:00 PM.</p>
         </div>
@@ -95,31 +99,31 @@
   </section>
 
   <!-- Events Section -->
-  <section id="events" class="py-16">
-    <div class="container mx-auto px-4">
+  <section id="events" class="py-16 bg-blue-950">
+    <div class="container mx-auto px-4 text-stone-100">
       <h2 class="text-3xl font-bold text-center mb-8">Upcoming Events</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold mb-4">Harvest Thanksgiving</h3>
           <p class="text-lg mb-4">Celebrate God's blessings with us on Sunday, November 26th.</p>
-          <a href="#" class="text-blue-900 font-semibold hover:text-blue-700">Learn More</a>
+          <a href="#" class="text-stone-100 font-semibold hover:text-white-700">Learn More</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold mb-4">Christmas Carol Service</h3>
           <p class="text-lg mb-4">Join us for a night of carols and celebration on December 17th at 6:00 PM.</p>
-          <a href="#" class="text-blue-900 font-semibold hover:text-blue-700">Learn More</a>
+          <a href="#" class="text-stone-100 font-semibold hover:text-blue-700">Learn More</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="bg-blue-900 p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold mb-4">New Year's Eve Service</h3>
           <p class="text-lg mb-4">Welcome the new year with prayer and praise on December 31st at 10:00 PM.</p>
-          <a href="#" class="text-blue-900 font-semibold hover:text-blue-700">Learn More</a>
+          <a href="#" class="text-stone-100 font-semibold hover:text-blue-700">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Giving Section -->
-  <section id="giving" class="bg-blue-900 text-white py-16">
+  <section id="giving" class="bg-blue-950 text-white py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Giving</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -136,15 +140,15 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-gray-200 py-16">
+  <section id="contact" class="bg-blue-950 py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <h2 class="text-3xl font-bold text-center mb-8 text-stone-100">Contact Us</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div>
+        <div class="text-stone-100">
           <p class="text-lg mb-4">We'd love to hear from you! Reach out to us for more information, prayer requests, or to join our community.</p>
           <p class="text-lg"><strong>Address:</strong> 2 Cathedral Square, Newcastle upon Tyne NE11EH</p>
           <p class="text-lg"><strong>Phone:</strong> 07421 706769</p>
-          <p class="text-lg"><strong>Email:</strong> info@hispresencenewcastle.org.uk</p>
+          <p class="text-lg"><strong>Email:</strong> <a href="mailto:info@hispresencenewcastle.org.uk">info@hispresencenewcastle.org.uk</a></p>
         </div>
         <div>
           <form class="bg-white p-6 rounded-lg shadow-lg">
