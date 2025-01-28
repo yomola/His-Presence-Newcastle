@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RCCG His Presence Newcastle</title>
   <link href="./output.css" rel="stylesheet">
+  <!-- Add a hamburger menu icon (you can use Heroicons or any other icon library) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Parent Container with Background Image -->
-  <div class="sm:bg-[url('./landing-Page-Alawode.webp')] bg-center bg-cover bg-no-repeat">
+  <div class="bg-[url('./landing-Page-Alawode.webp')] sm:bg-blue-950 bg-center bg-cover bg-no-repeat">
     <!-- Header Section -->
-    <header class=" md:bg-transparent sm:bg-blue-900/80 text-stone-100 py-6">
+    <header class=" md:bg-transparent  text-stone-100 py-6" x-data="{ isOpen: false }">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
           <!-- Church Logo -->
@@ -18,8 +20,14 @@
             <img src="./rccg-for-web.png" alt="Church Logo" class="h-12 w-12 mr-4">
             <h1 class="text-3xl font-bold">RCCG His Presence Newcastle</h1>
           </div>
-          <nav>
-            <ul class="flex space-x-4">
+          <!-- Hamburger Menu Button (Visible on Small Screens) -->
+          <button class="md:hidden focus:outline-none" @click="isOpen = !isOpen" type="button" title="click to see Menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <nav class="hidden md:block  transition-all duration-300 ease-in-out" :class="{ 'block': isOpen, 'hidden': !isOpen }">
+            <ul class="flex flex-col md:space-x-4 md:flex-row">
               <li><a href="#who-we-are" class="hover:text-blue-300">Who We Are</a></li>
               <li><a href="#services" class="hover:text-blue-300">Services</a></li>
               <li><a href="#events" class="hover:text-blue-300">Events</a></li>
@@ -41,18 +49,143 @@
     </section>
   </div>
 
-  <!-- Rest of the file remains unchanged -->
   <!-- Who We Are Section -->
   <section id="who-we-are" class="py-16 bg-blue-950">
     <div class="container mx-auto px-4 text-stone-100">
       <h2 class="text-3xl font-bold text-center mb-8">Who We Are</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <img src="https://via.placeholder.com/500x300" alt="Church Building" class="rounded-lg shadow-lg">
+        <div class="relative"> <!-- The carousel -->
+            <!-- Carousel Slides -->
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <!-- Slide 1 -->
+          <div class="carousel-item active relative float-left w-full">
+            <img src="./carousel-img/1.JPG" class="block w-full h-96 object-cover" alt="Slide 1">
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/2.JPG" class="block w-full h-96 object-cover" alt="Slide 2">
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/3.JPG" class="block w-full h-96 object-cover" alt="Slide 3">
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/4.JPG" class="block w-full h-96 object-cover" alt="Slide 4">
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/5.JPG" class="block w-full h-96 object-cover" alt="Slide 5">
+          </div>
+          <!-- Slide 6 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/6.JPG" class="block w-full h-96 object-cover" alt="Slide 6">
+          </div>
+          <!-- Slide 7 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/7.JPG" class="block w-full h-96 object-cover" alt="Slide 7">
+          </div>
+          <!-- Slide 8 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/8.JPG" class="block w-full h-96 object-cover" alt="Slide 8">
+          </div>
+          <!-- Slide 9 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/9.JPG" class="block w-full h-96 object-cover" alt="Slide 9">
+          </div>
+          <!-- Slide 10 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/10.JPG" class="block w-full h-96 object-cover" alt="Slide 10">
+          </div>
+          <!-- Slide 11 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/11.JPG" class="block w-full h-96 object-cover" alt="Slide 11">
+          </div>
+          <!-- Slide 12 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/12.JPG" class="block w-full h-96 object-cover" alt="Slide 12">
+          </div>
+          <!-- Slide 13 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/13.JPG" class="block w-full h-96 object-cover" alt="Slide 13">
+          </div>
+          <!-- Slide 14 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/14.JPG" class="block w-full h-96 object-cover" alt="Slide 14">
+          </div>
+          <!-- Slide 15 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/15.JPG" class="block w-full h-96 object-cover" alt="Slide 15">
+          </div>
+          <!-- Slide 16 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/16.JPG" class="block w-full h-96 object-cover" alt="Slide 16">
+          </div>
+          <!-- Slide 17 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/17.JPG" class="block w-full h-96 object-cover" alt="Slide 17">
+          </div>
+          <!-- Slide 18 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/18.JPG" class="block w-full h-96 object-cover" alt="Slide 18">
+          </div>
+          <!-- Slide 19 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/19.JPG" class="block w-full h-96 object-cover" alt="Slide 19">
+          </div>
+          <!-- Slide 20 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/20.JPG" class="block w-full h-96 object-cover" alt="Slide 20">
+          </div>
+          <!-- Slide 21 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/21.JPG" class="block w-full h-96 object-cover" alt="Slide 21">
+          </div>
+          <!-- Slide 22 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/22.JPG" class="block w-full h-96 object-cover" alt="Slide 22">
+          </div>
+          <!-- Slide 23 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/23.JPG" class="block w-full h-96 object-cover" alt="Slide 23">
+          </div>
+          <!-- Slide 24 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/24.JPG" class="block w-full h-96 object-cover" alt="Slide 24">
+          </div>
+          <!-- Slide 25 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/25.JPG" class="block w-full h-96 object-cover" alt="Slide 25">
+          </div>
+          <!-- Slide 26 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/26.JPG" class="block w-full h-96 object-cover" alt="Slide 26">
+          </div>
+          <!-- Slide 27 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/27.JPG" class="block w-full h-96 object-cover" alt="Slide 27">
+          </div>
+          <!-- Slide 28 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/28.JPG" class="block w-full h-96 object-cover" alt="Slide 28">
+          </div>
+          <!-- Slide 29 -->
+          <div class="carousel-item relative float-left w-full">
+            <img src="./carousel-img/29.JPG" class="block w-full h-96 object-cover" alt="Slide 29">
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+          &#10094; <!-- Left Arrow -->
+        </button>
+        <button class="carousel-control-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+          &#10095; <!-- Right Arrow -->
+        </button>
         </div>
         <div class="text-stone-100">
           <p class="text-lg mb-4">Redeem Christian Church of God (RCCG) His Presence Newcastle is a vibrant community of believers dedicated to spreading the gospel and experiencing God's presence. We are part of the global RCCG family, committed to holiness, evangelism, and discipleship.</p>
-          <p class="text-lg mb-4">Faith inspires us, Love unites us</p>
+          <p class="text-lg mb-4">Faith inspires us, Love unites us.</p>
           <p class="text-lg">We are confident that God uses ordinary people to achieve extraordinary things. We believe this necessitates honesty and vulnerability within our community. This fosters an atmosphere of authenticity where individuals can flourish and their Christian faith can deepen.</p>
         </div>
       </div>
@@ -63,7 +196,7 @@
         </div>
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Church Members.</dt>
-          <dd class="text-4xl font-semibold tracking-tight">300+</dd>
+          <dd class="text-4xl font-semibold tracking-tight">150+</dd>
         </div>
         <div class="flex flex-col-reverse gap-1">
           <dt class="text-base/7 font-bold">Warm and Welcoming.</dt>
@@ -201,5 +334,6 @@
       </div>
     </div>
   </footer>
+  <script src="./carousel.js"></script>
 </body>
 </html>
