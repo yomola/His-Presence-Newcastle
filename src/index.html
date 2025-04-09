@@ -11,18 +11,17 @@
 <body class="bg-gray-100 text-gray-800">
   <!-- Parent Container with Background Image -->
   <div class="bg-[url('./landing-Page-Alawode.webp')] sm:bg-blue-950 bg-center bg-cover bg-no-repeat">
-    <!-- Header Section -->
-<!-- Header Section -->
+   <!-- Header Section -->
 <header class="text-stone-100 py-6 fixed w-full top-0 left-0 z-50 bg-blue-950/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none" x-data="{ isOpen: false }">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center">
-      <!-- Church Logo -->
-      <div class="flex items-center">
+      <!-- Church Logo - Adjusted for better desktop spacing -->
+      <div class="flex items-center flex-shrink-0 mr-8">
         <img src="./rccg-for-web.png" alt="Church Logo" class="h-12 w-12 mr-4">
-        <h1 class="text-xl md:text-3xl font-bold">RCCG His Presence Newcastle</h1>
+        <h1 class="text-xl lg:text-2xl xl:text-3xl font-bold whitespace-nowrap">RCCG His Presence Newcastle</h1>
       </div>
       
-      <!-- Hamburger Menu Button -->
+      <!-- Hamburger Menu Button - Hidden on desktop -->
       <button class="md:hidden focus:outline-none z-50 p-2" 
               @click="isOpen = !isOpen" 
               type="button" 
@@ -34,21 +33,21 @@
         </svg>
       </button>
 
-      <!-- Navigation Menu -->
-      <div class="hidden md:block">
+      <!-- Desktop Navigation Menu - Improved spacing -->
+      <div class="hidden md:flex flex-1 justify-end">
         <nav>
-          <ul class="flex space-x-6">
-            <li><a href="#who-we-are" class="hover:text-blue-300 transition">Who We Are</a></li>
-            <li><a href="#services" class="hover:text-blue-300 transition">Services</a></li>
-            <li><a href="#events" class="hover:text-blue-300 transition">Events</a></li>
-            <li><a href="#giving" class="hover:text-blue-300 transition">Giving</a></li>
-            <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+          <ul class="flex space-x-4 lg:space-x-6 xl:space-x-8 items-center">
+            <li><a href="#who-we-are" class="hover:text-blue-300 transition whitespace-nowrap px-2 py-1 text-sm lg:text-base xl:text-lg">Who We Are</a></li>
+            <li><a href="#services" class="hover:text-blue-300 transition whitespace-nowrap px-2 py-1 text-sm lg:text-base xl:text-lg">Services</a></li>
+            <li><a href="#events" class="hover:text-blue-300 transition whitespace-nowrap px-2 py-1 text-sm lg:text-base xl:text-lg">Events</a></li>
+            <li><a href="#giving" class="hover:text-blue-300 transition whitespace-nowrap px-2 py-1 text-sm lg:text-base xl:text-lg">Giving</a></li>
+            <li><a href="#contact" class="hover:text-blue-300 transition whitespace-nowrap px-2 py-1 text-sm lg:text-base xl:text-lg">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <!-- Mobile Menu (Outside of the flex container) -->
+    <!-- Mobile Menu (Same as before) -->
     <div class="md:hidden">
       <!-- Overlay -->
       <div x-show="isOpen" 
@@ -83,7 +82,6 @@
 
 <!-- Add padding to the first section to account for fixed header -->
 <div class="pt-24 md:pt-0"></div>
-
     <!-- Hero Section -->
     <section class="text-stone-100 h-screen flex items-center">
       <div class="container mx-auto px-4 text-center">
