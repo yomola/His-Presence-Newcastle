@@ -72,15 +72,15 @@
                x-transition:leave="transition ease-in duration-300"
                x-transition:leave-start="translate-x-0"
                x-transition:leave-end="-translate-x-full"
-               class="fixed top-0 left-0 w-72 max-w-full h-full bg-blue-900/95 backdrop-blur-md z-50 shadow-2xl overflow-y-auto"
+               class="fixed top-0 left-0 w-full max-w-xs h-full bg-blue-900/95 backdrop-blur-md z-50 shadow-2xl overflow-y-auto"
                x-cloak>
-            <div class="p-6">
+            <div class="p-4">
               <button type="button" title="Close menu" @click="isOpen = false" class="absolute top-4 right-4 text-white p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
-              <ul class="space-y-6 mt-16">
+              <ul class="space-y-4 mt-12">
                 <li><a href="#who-we-are" @click="isOpen = false" class="block py-3 px-4 text-xl hover:text-blue-300 transition rounded-lg hover:bg-blue-800/30">Who We Are</a></li>
                 <li><a href="#services" @click="isOpen = false" class="block py-3 px-4 text-xl hover:text-blue-300 transition rounded-lg hover:bg-blue-800/30">Services</a></li>
                 <li><a href="#events" @click="isOpen = false" class="block py-3 px-4 text-xl hover:text-blue-300 transition rounded-lg hover:bg-blue-800/30">Events</a></li>
