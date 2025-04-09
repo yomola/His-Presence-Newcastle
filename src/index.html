@@ -15,7 +15,7 @@
 <body class="bg-gray-100 text-gray-800 scroll-pt-24 scroll-smooth">
   <!-- Parent Container with Background Image -->
   <div class="bg-[url('./landing-Page-Alawode.webp')] sm:bg-blue-950 bg-center bg-cover bg-no-repeat">
-    <!-- Header Section -->
+   <!-- Header Section -->
 <header class="text-stone-100 py-4 px-4 fixed w-full top-0 left-0 z-50 bg-blue-950/90 backdrop-blur-md" x-data="{ isOpen: false }">
   <div class="container mx-auto flex justify-between items-center">
     <!-- Church Logo -->
@@ -24,7 +24,7 @@
       <h1 class="text-lg lg:text-xl xl:text-2xl font-bold truncate">RCCG His Presence Newcastle</h1>
     </div>
     
-    <!-- Hamburger Menu Button -->
+    <!-- Hamburger/Close Button (transforms between states) -->
     <button class="md:hidden focus:outline-none z-50 p-1 ml-2" 
             @click="isOpen = !isOpen" 
             type="button" 
@@ -74,11 +74,6 @@
          class="fixed top-0 left-0 w-3/4 h-full bg-blue-900 z-50 shadow-2xl"
          x-cloak>
       <div class="p-4 h-full">
-        <button type="button" title="Close menu" @click="isOpen = false" class="absolute top-4 right-4 text-white p-2">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
         <ul class="space-y-2 mt-12">
           <li class="bg-blue-800/90 rounded-lg"><a href="#who-we-are" @click="isOpen = false" class="block py-3 px-4 text-lg text-white hover:text-blue-300 transition">Who We Are</a></li>
           <li class="bg-blue-800/90 rounded-lg"><a href="#services" @click="isOpen = false" class="block py-3 px-4 text-lg text-white hover:text-blue-300 transition">Services</a></li>
