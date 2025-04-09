@@ -7,19 +7,15 @@
   <link href="./output.css" rel="stylesheet">
   <!-- Add Alpine.js for mobile menu functionality -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
-  <style>
-    /* Add this to prevent menu flickering on load */
-    [x-cloak] { display: none !important; }
-  </style>
 </head>
 <body class="bg-gray-100 text-gray-800 scroll-pt-24 scroll-smooth">
   <!-- Parent Container with Background Image -->
-  <div class="bg-[url('./landing-Page-Alawode.webp')] sm:bg-blue-950 bg-center bg-cover bg-no-repeat">
-  <!-- Header Section -->
-<header class="text-stone-100 py-4 px-4 fixed w-full top-0 left-0 z-50 bg-blue-950/90 backdrop-blur-md" x-data="{ isOpen: false }">
-  <div class="container mx-auto flex justify-between items-center">
-    <!-- Stationary Church Logo (doesn't move) -->
-    <div class="flex items-center flex-shrink-0 max-w-[70%]">
+  <div class="sm:bg-blue-950 bg-[url('./landing-Page-Alawode.webp')]  bg-center bg-cover bg-no-repeat">
+    <!-- Header Section -->
+    <header class="text-stone-100 py-4 px-4 fixed w-full top-0 left-0 z-50 bg-blue-950/90 backdrop-blur-md" x-data="{ isOpen: false }">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Stationary Church Logo (doesn't move) -->
+      <div class="flex items-center flex-shrink-0 max-w-[70%]">
       <img src="./HPNLogo.png" alt="Church Logo" class="h-10 w-10 mr-2">
       <h1 class="text-lg lg:text-xl xl:text-2xl font-bold truncate">RCCG His Presence Newcastle</h1>
     </div>
