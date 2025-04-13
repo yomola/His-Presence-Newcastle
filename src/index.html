@@ -382,6 +382,11 @@
           </div>
           <div class="mt-auto">
             <a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-300 transition duration-300">Give Online</a>
+            <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+            <div id="paypal-button-container"></div>
+            <script>
+              paypal.Buttons().render('#paypal-button-container');
+            </script>
           </div>
           
         </div>
